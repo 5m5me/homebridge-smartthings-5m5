@@ -1,0 +1,26 @@
+{
+  "name": "homebridge-smartthings-5m5",
+  "version": "0.1.0",
+  "displayName": "SmartThings (5m5)",
+  "description": "Homebridge platform plugin for Samsung SmartThings devices",
+  "type": "module",
+  "main": "src/index.js",
+  "keywords": ["homebridge-plugin", "smartthings", "samsung"],
+  "engines": {
+    "node": ">=20",
+    "homebridge": "^1.8.0 || ^2.0.0"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "homebridge": "^2.0.0"
+  },
+  "bin": {
+    "smartthings-5m5-oauth": "bin/oauth-setup.js"
+  },
+  "files": ["src", "bin", "config.schema.json", "README.md"]
+}

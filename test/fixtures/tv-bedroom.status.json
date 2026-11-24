@@ -1,0 +1,69 @@
+{
+ "components": {
+  "main": {
+   "switch": {
+    "switch": {
+     "value": "off"
+    }
+   },
+   "audioVolume": {
+    "volume": {
+     "value": 15
+    }
+   },
+   "audioMute": {
+    "mute": {
+     "value": "muted"
+    }
+   },
+   "mediaInputSource": {
+    "supportedInputSources": {
+     "value": []
+    },
+    "inputSource": {
+     "value": null
+    }
+   },
+   "samsungvd.mediaInputSource": {
+    "supportedInputSourcesMap": {
+     "value": [
+      {
+       "id": "dtv",
+       "name": "TV"
+      },
+      {
+       "id": "HDMI1",
+       "name": "XBOX Series X|S"
+      },
+      {
+       "id": "HDMI2",
+       "name": "Bedroom TV"
+      }
+     ]
+    },
+    "inputSource": {
+     "value": "HDMI2"
+    }
+   },
+   "samsungvd.ambient": {
+    "info": {
+     "value": null
+    }
+   },
+   "custom.launchapp": {},
+   "tvChannel": {
+    "tvChannel": {
+     "value": ""
+    },
+    "tvChannelName": {
+     "value": ""
+    }
+   },
+   "samsungvd.supportsPowerOnByOcf": {
+    "supportsPowerOnByOcf": {
+     "value": "true"
+    }
+   }
+  }
+ }
+}

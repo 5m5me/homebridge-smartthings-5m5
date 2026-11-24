@@ -1,0 +1,31 @@
+{
+ "components": {
+  "main": {
+   "waterSensor": {
+    "water": {
+     "value": "dry"
+    }
+   },
+   "temperatureMeasurement": {
+    "temperatureRange": {
+     "value": null
+    },
+    "temperature": {
+     "value": 25.1,
+     "unit": "C"
+    }
+   },
+   "battery": {
+    "quantity": {
+     "value": null
+    },
+    "battery": {
+     "value": 15
+    },
+    "type": {
+     "value": null
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,77 @@
+{
+  "pluginAlias": "SmartThings5m5",
+  "pluginType": "platform",
+  "singular": true,
+  "headerDisplay": "Samsung SmartThings devices in Apple Home. Provide either a personal access token or OAuth credentials.",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Name",
+        "type": "string",
+        "default": "SmartThings (5m5)",
+        "required": true
+      },
+      "accessToken": {
+        "title": "Personal access token",
+        "description": "Short lived. Prefer the OAuth settings below for a long running install.",
+        "type": "string"
+      },
+      "oauth": {
+        "title": "OAuth",
+        "type": "object",
+        "properties": {
+          "clientId": { "title": "Client ID", "type": "string" },
+          "clientSecret": { "title": "Client secret", "type": "string" },
+          "refreshToken": { "title": "Refresh token", "type": "string" }
+        }
+      },
+      "pollSeconds": {
+        "title": "Poll intervals (seconds)",
+        "type": "object",
+        "properties": {
+          "sensors": { "title": "Moisture sensors", "type": "integer", "default": 30, "minimum": 5 },
+          "appliances": { "title": "Washer, dryer and fridge", "type": "integer", "default": 15, "minimum": 5 },
+          "tvs": { "title": "TVs", "type": "integer", "default": 20, "minimum": 5 }
+        }
+      },
+      "finishedHoldMinutes": {
+        "title": "Finished sensor hold (minutes)",
+        "description": "How long the washer and dryer Finished sensor stays triggered after a cycle ends.",
+        "type": "integer",
+        "default": 30,
+        "minimum": 1
+      },
+      "ignoreDevices": {
+        "title": "Ignore devices",
+        "description": "Labels of SmartThings devices to leave out of HomeKit.",
+        "type": "array",
+        "items": { "type": "string" }
+      },
+      "tvs": {
+        "title": "TVs",
+        "description": "Optional per TV settings, matched on the SmartThings device label.",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "label": { "title": "SmartThings device label", "type": "string" },
+            "ip": { "title": "IP address", "type": "string" },
+            "mac": { "title": "MAC address", "type": "string" },
+            "apps": {
+              "title": "Apps",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": { "title": "Name", "type": "string" },
+                  "appId": { "title": "SmartThings app ID", "type": "string" }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

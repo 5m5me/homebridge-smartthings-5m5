@@ -1,0 +1,71 @@
+{
+ "components": {
+  "main": {
+   "switch": {
+    "switch": {
+     "value": "off"
+    }
+   },
+   "dryerOperatingState": {
+    "completionTime": {
+     "value": "2026-11-24T01:43:02Z"
+    },
+    "machineState": {
+     "value": "stop"
+    },
+    "supportedMachineStates": {
+     "value": [
+      "stop",
+      "run",
+      "pause"
+     ]
+    },
+    "dryerJobState": {
+     "value": "weightSensing"
+    }
+   },
+   "samsungce.dryerOperatingState": {
+    "operatingState": {
+     "value": "ready"
+    },
+    "supportedOperatingStates": {
+     "value": [
+      "ready",
+      "running",
+      "paused"
+     ]
+    },
+    "progress": {
+     "value": 1
+    },
+    "remainingTimeStr": {
+     "value": "02:29"
+    },
+    "dryerJobState": {
+     "value": "weightSensing"
+    },
+    "remainingTime": {
+     "value": 149
+    }
+   },
+   "remoteControlStatus": {
+    "remoteControlEnabled": {
+     "value": "false"
+    }
+   },
+   "custom.dryerWrinklePrevent": {
+    "operatingState": {
+     "value": "ready"
+    },
+    "dryerWrinklePrevent": {
+     "value": "off"
+    }
+   },
+   "samsungce.kidsLock": {
+    "lockState": {
+     "value": "unlocked"
+    }
+   }
+  }
+ }
+}

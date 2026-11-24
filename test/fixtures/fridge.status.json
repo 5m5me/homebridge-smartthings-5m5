@@ -1,0 +1,184 @@
+{
+ "components": {
+  "main": {
+   "contactSensor": {
+    "contact": {
+     "value": "closed"
+    }
+   },
+   "refrigeration": {
+    "defrost": {
+     "value": null
+    },
+    "rapidCooling": {
+     "value": "off"
+    },
+    "rapidFreezing": {
+     "value": "off"
+    }
+   },
+   "temperatureMeasurement": {
+    "temperatureRange": {
+     "value": null
+    },
+    "temperature": {
+     "value": null
+    }
+   },
+   "thermostatCoolingSetpoint": {
+    "coolingSetpointRange": {
+     "value": null
+    },
+    "coolingSetpoint": {
+     "value": null
+    }
+   },
+   "samsungce.fridgeVacationMode": {
+    "vacationMode": {
+     "value": "off"
+    },
+    "supportedVacationModes": {
+     "value": null
+    }
+   },
+   "custom.waterFilter": {
+    "waterFilterStatus": {
+     "value": null
+    },
+    "waterFilterUsage": {
+     "value": null
+    }
+   },
+   "samsungce.powerCool": {
+    "activated": {
+     "value": false
+    }
+   },
+   "samsungce.powerFreeze": {
+    "activated": {
+     "value": false
+    }
+   },
+   "custom.disabledComponents": {
+    "disabledComponents": {
+     "value": [
+      "icemaker-02",
+      "icemaker-03",
+      "pantry-01",
+      "pantry-02",
+      "curdmaker",
+      "scale-10",
+      "scale-11",
+      "cvroom",
+      "onedoor",
+      "camera-01"
+     ]
+    }
+   }
+  },
+  "cooler": {
+   "contactSensor": {
+    "contact": {
+     "value": "closed"
+    }
+   },
+   "temperatureMeasurement": {
+    "temperatureRange": {
+     "value": null
+    },
+    "temperature": {
+     "value": 5,
+     "unit": "C"
+    }
+   },
+   "thermostatCoolingSetpoint": {
+    "coolingSetpointRange": {
+     "value": {
+      "minimum": 1,
+      "maximum": 7,
+      "step": 1
+     }
+    },
+    "coolingSetpoint": {
+     "value": 5,
+     "unit": "C"
+    }
+   }
+  },
+  "freezer": {
+   "contactSensor": {
+    "contact": {
+     "value": "closed"
+    }
+   },
+   "temperatureMeasurement": {
+    "temperatureRange": {
+     "value": null
+    },
+    "temperature": {
+     "value": -19,
+     "unit": "C"
+    }
+   },
+   "thermostatCoolingSetpoint": {
+    "coolingSetpointRange": {
+     "value": {
+      "minimum": -23,
+      "maximum": -15,
+      "step": 1
+     }
+    },
+    "coolingSetpoint": {
+     "value": -19,
+     "unit": "C"
+    }
+   }
+  },
+  "cvroom": {
+   "contactSensor": {
+    "contact": {
+     "value": null
+    }
+   },
+   "temperatureMeasurement": {
+    "temperatureRange": {
+     "value": null
+    },
+    "temperature": {
+     "value": null
+    }
+   },
+   "thermostatCoolingSetpoint": {
+    "coolingSetpointRange": {
+     "value": null
+    },
+    "coolingSetpoint": {
+     "value": null
+    }
+   }
+  },
+  "onedoor": {
+   "contactSensor": {
+    "contact": {
+     "value": null
+    }
+   },
+   "temperatureMeasurement": {
+    "temperatureRange": {
+     "value": null
+    },
+    "temperature": {
+     "value": null
+    }
+   },
+   "thermostatCoolingSetpoint": {
+    "coolingSetpointRange": {
+     "value": null
+    },
+    "coolingSetpoint": {
+     "value": null
+    }
+   }
+  }
+ }
+}

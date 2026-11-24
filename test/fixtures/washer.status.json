@@ -1,0 +1,89 @@
+{
+ "components": {
+  "main": {
+   "switch": {
+    "switch": {
+     "value": "off"
+    }
+   },
+   "washerOperatingState": {
+    "completionTime": {
+     "value": "2026-11-24T00:28:03Z"
+    },
+    "machineState": {
+     "value": "stop"
+    },
+    "washerJobState": {
+     "value": "none"
+    },
+    "supportedMachineStates": {
+     "value": [
+      "stop",
+      "run",
+      "pause"
+     ]
+    }
+   },
+   "samsungce.washerOperatingState": {
+    "washingProgress": {
+     "value": null
+    },
+    "dryingProgress": {
+     "value": null
+    },
+    "washerJobState": {
+     "value": "none"
+    },
+    "operatingState": {
+     "value": "ready"
+    },
+    "supportedOperatingStates": {
+     "value": [
+      "ready",
+      "running",
+      "paused"
+     ]
+    },
+    "progress": {
+     "value": 1
+    },
+    "remainingTimeStr": {
+     "value": "01:44"
+    },
+    "washerJobPhase": {
+     "value": "none"
+    },
+    "operationTime": {
+     "value": 104
+    },
+    "remainingTime": {
+     "value": 104
+    }
+   },
+   "remoteControlStatus": {
+    "remoteControlEnabled": {
+     "value": "false"
+    }
+   },
+   "samsungce.detergentState": {
+    "remainingAmount": {
+     "value": 0
+    },
+    "dosage": {
+     "value": 0
+    },
+    "initialAmount": {
+     "value": 0
+    },
+    "detergentType": {
+     "value": "liquid"
+    }
+   },
+   "samsungce.kidsLock": {
+    "lockState": {
+     "value": "unlocked"
+    }
+   }
+  }
+ }
+}

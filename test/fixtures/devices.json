@@ -1,0 +1,568 @@
+{
+ "items": [
+  {
+   "deviceId": "00000000-0000-0000-0000-000000000001",
+   "label": "Samsung 85 TV - Games room",
+   "name": "Samsung 85 TV - Games room",
+   "type": "OCF",
+   "components": [
+    {
+     "id": "main",
+     "capabilities": [
+      {
+       "id": "ocf",
+       "version": 1
+      },
+      {
+       "id": "switch",
+       "version": 1
+      },
+      {
+       "id": "audioVolume",
+       "version": 1
+      },
+      {
+       "id": "audioMute",
+       "version": 1
+      },
+      {
+       "id": "tvChannel",
+       "version": 1
+      },
+      {
+       "id": "mediaInputSource",
+       "version": 1
+      },
+      {
+       "id": "mediaPlayback",
+       "version": 1
+      },
+      {
+       "id": "custom.launchapp",
+       "version": 1
+      },
+      {
+       "id": "samsungvd.remoteControl",
+       "version": 1
+      },
+      {
+       "id": "samsungvd.mediaInputSource",
+       "version": 1
+      },
+      {
+       "id": "samsungvd.supportsPowerOnByOcf",
+       "version": 1
+      }
+     ]
+    }
+   ],
+   "deviceTypeName": "Samsung OCF TV"
+  },
+  {
+   "deviceId": "00000000-0000-0000-0000-000000000002",
+   "label": "iPhone",
+   "name": "iPhone",
+   "type": "MOBILE",
+   "components": [
+    {
+     "id": "main",
+     "capabilities": [
+      {
+       "id": "presenceSensor",
+       "version": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "deviceId": "00000000-0000-0000-0000-000000000003",
+   "label": "Hub",
+   "name": "Hub",
+   "type": "HUB",
+   "components": [
+    {
+     "id": "main",
+     "capabilities": [
+      {
+       "id": "bridge",
+       "version": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "deviceId": "00000000-0000-0000-0000-000000000004",
+   "label": "Samsung 65 TV - Bedroom",
+   "name": "Samsung 65 TV - Bedroom",
+   "type": "OCF",
+   "components": [
+    {
+     "id": "main",
+     "capabilities": [
+      {
+       "id": "ocf",
+       "version": 1
+      },
+      {
+       "id": "switch",
+       "version": 1
+      },
+      {
+       "id": "audioVolume",
+       "version": 1
+      },
+      {
+       "id": "audioMute",
+       "version": 1
+      },
+      {
+       "id": "tvChannel",
+       "version": 1
+      },
+      {
+       "id": "mediaInputSource",
+       "version": 1
+      },
+      {
+       "id": "mediaPlayback",
+       "version": 1
+      },
+      {
+       "id": "custom.launchapp",
+       "version": 1
+      },
+      {
+       "id": "samsungvd.remoteControl",
+       "version": 1
+      },
+      {
+       "id": "samsungvd.mediaInputSource",
+       "version": 1
+      },
+      {
+       "id": "samsungvd.supportsPowerOnByOcf",
+       "version": 1
+      }
+     ]
+    }
+   ],
+   "deviceTypeName": "Samsung OCF TV"
+  },
+  {
+   "deviceId": "00000000-0000-0000-0000-000000000005",
+   "label": "Hub - Samsung 65 TV - Bedroom",
+   "name": "Hub - Samsung 65 TV - Bedroom",
+   "type": "HUB",
+   "components": [
+    {
+     "id": "main",
+     "capabilities": [
+      {
+       "id": "bridge",
+       "version": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "deviceId": "00000000-0000-0000-0000-000000000006",
+   "label": "Moisture Sensor 03",
+   "name": "Moisture Sensor 03",
+   "type": "ZIGBEE",
+   "components": [
+    {
+     "id": "main",
+     "capabilities": [
+      {
+       "id": "waterSensor",
+       "version": 1
+      },
+      {
+       "id": "temperatureMeasurement",
+       "version": 1
+      },
+      {
+       "id": "battery",
+       "version": 1
+      },
+      {
+       "id": "firmwareUpdate",
+       "version": 1
+      },
+      {
+       "id": "refresh",
+       "version": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "deviceId": "00000000-0000-0000-0000-000000000007",
+   "label": "Moisture Sensor 02",
+   "name": "Moisture Sensor 02",
+   "type": "ZIGBEE",
+   "components": [
+    {
+     "id": "main",
+     "capabilities": [
+      {
+       "id": "waterSensor",
+       "version": 1
+      },
+      {
+       "id": "temperatureMeasurement",
+       "version": 1
+      },
+      {
+       "id": "battery",
+       "version": 1
+      },
+      {
+       "id": "firmwareUpdate",
+       "version": 1
+      },
+      {
+       "id": "refresh",
+       "version": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "deviceId": "00000000-0000-0000-0000-000000000008",
+   "label": "Moisture Sensor 01",
+   "name": "Moisture Sensor 01",
+   "type": "ZIGBEE",
+   "components": [
+    {
+     "id": "main",
+     "capabilities": [
+      {
+       "id": "waterSensor",
+       "version": 1
+      },
+      {
+       "id": "temperatureMeasurement",
+       "version": 1
+      },
+      {
+       "id": "battery",
+       "version": 1
+      },
+      {
+       "id": "firmwareUpdate",
+       "version": 1
+      },
+      {
+       "id": "refresh",
+       "version": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "deviceId": "00000000-0000-0000-0000-000000000009",
+   "label": "Washing machine",
+   "name": "Washing machine",
+   "type": "OCF",
+   "components": [
+    {
+     "id": "main",
+     "capabilities": [
+      {
+       "id": "execute",
+       "version": 1
+      },
+      {
+       "id": "ocf",
+       "version": 1
+      },
+      {
+       "id": "refresh",
+       "version": 1
+      },
+      {
+       "id": "remoteControlStatus",
+       "version": 1
+      },
+      {
+       "id": "switch",
+       "version": 1
+      },
+      {
+       "id": "washerOperatingState",
+       "version": 1
+      },
+      {
+       "id": "samsungce.washerOperatingState",
+       "version": 1
+      },
+      {
+       "id": "samsungce.kidsLock",
+       "version": 1
+      }
+     ]
+    }
+   ],
+   "deviceTypeName": "Samsung OCF Washer"
+  },
+  {
+   "deviceId": "00000000-0000-0000-0000-000000000010",
+   "label": "Family Hub",
+   "name": "Family Hub",
+   "type": "OCF",
+   "components": [
+    {
+     "id": "main",
+     "capabilities": [
+      {
+       "id": "contactSensor",
+       "version": 1
+      },
+      {
+       "id": "ocf",
+       "version": 1
+      },
+      {
+       "id": "refresh",
+       "version": 1
+      },
+      {
+       "id": "refrigeration",
+       "version": 1
+      },
+      {
+       "id": "temperatureMeasurement",
+       "version": 1
+      },
+      {
+       "id": "thermostatCoolingSetpoint",
+       "version": 1
+      },
+      {
+       "id": "samsungce.fridgeVacationMode",
+       "version": 1
+      },
+      {
+       "id": "samsungce.powerCool",
+       "version": 1
+      },
+      {
+       "id": "samsungce.powerFreeze",
+       "version": 1
+      },
+      {
+       "id": "custom.disabledComponents",
+       "version": 1
+      }
+     ]
+    },
+    {
+     "id": "freezer",
+     "capabilities": [
+      {
+       "id": "contactSensor",
+       "version": 1
+      }
+     ]
+    },
+    {
+     "id": "cooler",
+     "capabilities": [
+      {
+       "id": "contactSensor",
+       "version": 1
+      }
+     ]
+    },
+    {
+     "id": "cvroom",
+     "capabilities": [
+      {
+       "id": "contactSensor",
+       "version": 1
+      }
+     ]
+    },
+    {
+     "id": "onedoor",
+     "capabilities": [
+      {
+       "id": "contactSensor",
+       "version": 1
+      }
+     ]
+    }
+   ],
+   "deviceTypeName": "Samsung OCF Refrigerator"
+  },
+  {
+   "deviceId": "00000000-0000-0000-0000-000000000011",
+   "label": "Moisture Sensor 04",
+   "name": "Moisture Sensor 04",
+   "type": "ZIGBEE",
+   "components": [
+    {
+     "id": "main",
+     "capabilities": [
+      {
+       "id": "waterSensor",
+       "version": 1
+      },
+      {
+       "id": "temperatureMeasurement",
+       "version": 1
+      },
+      {
+       "id": "battery",
+       "version": 1
+      },
+      {
+       "id": "firmwareUpdate",
+       "version": 1
+      },
+      {
+       "id": "refresh",
+       "version": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "deviceId": "00000000-0000-0000-0000-000000000012",
+   "label": "Tumble dryer",
+   "name": "Tumble dryer",
+   "type": "OCF",
+   "components": [
+    {
+     "id": "main",
+     "capabilities": [
+      {
+       "id": "ocf",
+       "version": 1
+      },
+      {
+       "id": "execute",
+       "version": 1
+      },
+      {
+       "id": "refresh",
+       "version": 1
+      },
+      {
+       "id": "switch",
+       "version": 1
+      },
+      {
+       "id": "remoteControlStatus",
+       "version": 1
+      },
+      {
+       "id": "dryerOperatingState",
+       "version": 1
+      },
+      {
+       "id": "samsungce.dryerOperatingState",
+       "version": 1
+      },
+      {
+       "id": "custom.dryerWrinklePrevent",
+       "version": 1
+      },
+      {
+       "id": "samsungce.kidsLock",
+       "version": 1
+      }
+     ]
+    }
+   ],
+   "deviceTypeName": "Samsung OCF Dryer"
+  },
+  {
+   "deviceId": "00000000-0000-0000-0000-000000000013",
+   "label": "Samsung 85 TV - Lounge room",
+   "name": "Samsung 85 TV - Lounge room",
+   "type": "OCF",
+   "components": [
+    {
+     "id": "main",
+     "capabilities": [
+      {
+       "id": "ocf",
+       "version": 1
+      },
+      {
+       "id": "switch",
+       "version": 1
+      },
+      {
+       "id": "audioVolume",
+       "version": 1
+      },
+      {
+       "id": "audioMute",
+       "version": 1
+      },
+      {
+       "id": "tvChannel",
+       "version": 1
+      },
+      {
+       "id": "mediaInputSource",
+       "version": 1
+      },
+      {
+       "id": "mediaPlayback",
+       "version": 1
+      },
+      {
+       "id": "custom.launchapp",
+       "version": 1
+      },
+      {
+       "id": "samsungvd.remoteControl",
+       "version": 1
+      },
+      {
+       "id": "samsungvd.mediaInputSource",
+       "version": 1
+      },
+      {
+       "id": "samsungvd.supportsPowerOnByOcf",
+       "version": 1
+      }
+     ]
+    }
+   ],
+   "deviceTypeName": "Samsung OCF TV"
+  },
+  {
+   "deviceId": "00000000-0000-0000-0000-000000000014",
+   "label": "iPhone",
+   "name": "iPhone",
+   "type": "MOBILE",
+   "components": [
+    {
+     "id": "main",
+     "capabilities": [
+      {
+       "id": "presenceSensor",
+       "version": 1
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "_links": {
+  "next": null,
+  "previous": null
+ }
+}
