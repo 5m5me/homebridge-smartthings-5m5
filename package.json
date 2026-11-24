@@ -1,6 +1,6 @@
 {
   "name": "homebridge-smartthings-5m5",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "displayName": "SmartThings (5m5)",
   "description": "Homebridge platform plugin for Samsung SmartThings devices",
   "type": "module",

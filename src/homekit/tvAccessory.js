@@ -2,7 +2,7 @@ import {
   tvState, powerOffCommand, powerOnCommand, inputCommand, volumeUpCommand, volumeDownCommand,
   muteCommand, keyCommand, launchAppCommand,
 } from '../devices/tv.js';
-import { powerOnSequence as defaultPowerOnSequence } from '../local/samsungTv.js';
+import { TvPowerOn } from '../local/tvPowerOn.js';
 import { ensureService, setInfo, setName, sanitizeName, sendOrThrow } from './common.js';
 
 const KEY_MAP = {
@@ -26,12 +26,16 @@ export class TvAccessory {
     this.log = log;
     this.tvConfig = tvConfig;
     this.tokenStore = tokenStore;
-    this.powerOnSequence = deps.powerOnSequence ?? defaultPowerOnSequence;
     this.entries = null; // built on the first update with inputs
     this.state = null;
-    this.pendingPowerOn = null;
     const { Service, Characteristic } = hap;
     this.label = sanitizeName(device.label ?? device.name ?? 'TV');
+    // The platform may pass one shared power on guard, so HomeKit and Matter never run two sequences at once.
+    this.powerOn = deps.powerOn ?? new TvPowerOn({
+      client, device, log, label: this.label, tvConfig, tokenStore,
+      powerOnSequence: deps.powerOnSequence,
+      cloudPowerOn: () => Boolean(this.state?.cloudPowerOn),
+    });
     setInfo({ accessory, hap, device });
 
     this.tv = ensureService(accessory, Service.Television, this.label);
@@ -49,6 +53,10 @@ export class TvAccessory {
     this.speaker.getCharacteristic(Characteristic.Mute).onSet((value) => this.#setMute(value));
   }
 
+  get pendingPowerOn() {
+    return this.powerOn.pending;
+  }
+
   #send(commands) {
     return sendOrThrow(this, commands);
   }
@@ -58,30 +66,12 @@ export class TvAccessory {
       await this.#send(powerOffCommand());
       return;
     }
-    const cfg = this.tvConfig;
-    if (!cfg?.ip || !cfg?.mac) {
+    if (!this.powerOn.hasLocal) {
       await this.#send(powerOnCommand());
       return;
     }
-    // KEY_POWER toggles the TV, so never run two power on sequences at once.
-    if (this.pendingPowerOn !== null) return;
     // Do not make HomeKit wait for the wake and key sequence.
-    const pending = this.#localPowerOn(cfg).finally(() => {
-      if (this.pendingPowerOn === pending) this.pendingPowerOn = null;
-    });
-    this.pendingPowerOn = pending;
-  }
-
-  async #localPowerOn({ mac, ip }) {
-    try {
-      const result = await this.powerOnSequence({ mac, ip, tokenStore: this.tokenStore });
-      this.log?.info?.(`${this.label}: local power on finished with result ${result}`);
-      if (result !== 'on' && this.state?.cloudPowerOn) {
-        await this.client.sendCommands(this.device.deviceId, powerOnCommand());
-      }
-    } catch (error) {
-      this.log?.warn?.(`${this.label}: power on failed: ${error?.message ?? error}`);
-    }
+    this.powerOn.startLocal();
   }
 
   async #setIdentifier(value) {
@@ -137,7 +127,7 @@ export class TvAccessory {
     this.state = state;
     if (!this.entries && state.inputs.length > 0) this.#buildInputs(state);
 
-    const active = state.on || this.pendingPowerOn !== null ? 1 : 0;
+    const active = state.on || this.powerOn.pending !== null ? 1 : 0;
     this.tv.updateCharacteristic(Characteristic.Active, active);
     this.speaker.updateCharacteristic(Characteristic.Active, 1);
     this.speaker.updateCharacteristic(Characteristic.Mute, state.muted);

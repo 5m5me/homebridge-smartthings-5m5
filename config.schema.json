@@ -9,7 +9,7 @@
       "name": {
         "title": "Name",
         "type": "string",
-        "default": "SmartThings (5m5)",
+        "default": "SmartThings 5m5",
         "required": true
       },
       "accessToken": {
@@ -41,6 +41,27 @@
         "type": "integer",
         "default": 30,
         "minimum": 1
+      },
+      "connection": {
+        "title": "Connection to Apple Home",
+        "description": "Auto uses Matter when Matter is switched on for this bridge in Homebridge, otherwise HomeKit. Devices are published over one connection only. TVs are always also published as HomeKit external accessories.",
+        "type": "string",
+        "default": "auto",
+        "enum": ["auto", "homekit", "matter"]
+      },
+      "leakAs": {
+        "title": "Moisture sensor as (Matter only)",
+        "description": "Leak sensor is the proper type. If Apple Home does not show it, use contact sensor, where a leak shows as open.",
+        "type": "string",
+        "default": "leak",
+        "enum": ["leak", "contact"]
+      },
+      "fridgeTemperature": {
+        "title": "Fridge and freezer temperature (Matter only)",
+        "description": "Thermostat lets you set the temperature from Apple Home. Sensor is read only, a fallback if the thermostat does not work in Apple Home.",
+        "type": "string",
+        "default": "thermostat",
+        "enum": ["thermostat", "sensor"]
       },
       "ignoreDevices": {
         "title": "Ignore devices",
